@@ -372,7 +372,7 @@ export const OpenInPicker = memo(function OpenInPicker({
     >
       <ThreadDetailsControl
         aria-label={compact ? "Open file in preferred editor" : primaryLabel}
-        size={isPanel ? "sm" : "xs"}
+        size={compact ? "xs" : "sm"}
         variant={isPanel ? "ghost" : "outline"}
         part="primary"
         panel={isPanel}
@@ -414,7 +414,7 @@ export const OpenInPicker = memo(function OpenInPicker({
           render={
             <ThreadDetailsControl
               aria-label="Choose editor"
-              size={isPanel ? "sm" : "icon-xs"}
+              size={isPanel ? "sm" : compact ? "icon-xs" : "icon-sm"}
               variant={isPanel ? "ghost" : "outline"}
               part="secondary"
               panel={isPanel}

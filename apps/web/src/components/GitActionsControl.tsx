@@ -1771,7 +1771,7 @@ export default function GitActionsControl({
         )
       ) : !isRepo ? (
         <ThreadDetailsControl
-          size="xs"
+          size="sm"
           variant={isPanel ? "ghost" : "outline"}
           part="row"
           panel={isPanel}
@@ -1824,7 +1824,7 @@ export default function GitActionsControl({
                     aria-disabled="true"
                     part="primary"
                     panel={isPanel}
-                    size="xs"
+                    size="sm"
                     variant={isPanel ? "ghost" : "outline"}
                   />
                 }
@@ -1850,7 +1850,7 @@ export default function GitActionsControl({
           ) : (
             <ThreadDetailsControl
               variant={isPanel ? "ghost" : "outline"}
-              size="xs"
+              size="sm"
               part="primary"
               panel={isPanel}
               disabled={isGitActionRunning || quickAction.disabled}
@@ -1898,7 +1898,7 @@ export default function GitActionsControl({
                   render={
                     <ThreadDetailsControl
                       aria-label="Git action options"
-                      size={isPanel ? "sm" : "icon-xs"}
+                      size={isPanel ? "sm" : "icon-sm"}
                       variant={isPanel ? "ghost" : "outline"}
                       part="secondary"
                       panel={isPanel}

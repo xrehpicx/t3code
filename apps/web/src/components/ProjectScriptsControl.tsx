@@ -290,11 +290,11 @@ export default function ProjectScriptsControl({
             <TooltipTrigger
               render={
                 <ThreadDetailsControl
-                  size="xs"
+                  size="sm"
                   variant={isPanel ? "ghost" : "outline"}
                   part="primary"
                   panel={isPanel}
-                  className={isPanel ? undefined : "w-7 sm:w-6 @3xl/header-actions:w-auto!"}
+                  className={isPanel ? undefined : "w-8 sm:w-7 @3xl/header-actions:w-auto!"}
                   aria-label={`Run ${primaryScript.name}`}
                   // The tooltip wrapper replaces data-slot="button", so themed
                   // toolbar styling needs its own hook.
@@ -332,7 +332,7 @@ export default function ProjectScriptsControl({
             <MenuTrigger
               render={
                 <ThreadDetailsControl
-                  size={isPanel ? "sm" : "icon-xs"}
+                  size={isPanel ? "sm" : "icon-sm"}
                   variant={isPanel ? "ghost" : "outline"}
                   part="secondary"
                   panel={isPanel}
@@ -409,7 +409,7 @@ export default function ProjectScriptsControl({
             }
           >
             <MenuTrigger
-              render={<Button size="xs" variant="outline" aria-label="Project actions" />}
+              render={<Button size="sm" variant="outline" aria-label="Project actions" />}
             >
               <WrenchIcon className="size-3.5" />
               <span className="sr-only @3xl/header-actions:not-sr-only @3xl/header-actions:ml-0.5">
@@ -431,11 +431,11 @@ export default function ProjectScriptsControl({
           <TooltipTrigger
             render={
               <ThreadDetailsControl
-                size="xs"
+                size="sm"
                 variant={isPanel ? "ghost" : "outline"}
                 part="row"
                 panel={isPanel}
-                className={isPanel ? undefined : "w-7 sm:w-6 @3xl/header-actions:w-auto!"}
+                className={isPanel ? undefined : "w-8 sm:w-7 @3xl/header-actions:w-auto!"}
                 aria-label={isPanel ? "Add project script" : "Add action"}
                 // The tooltip wrapper replaces data-slot="button", so themed
                 // toolbar styling needs its own hook.
