@@ -6885,6 +6885,9 @@ export default function ChatView(props: ChatViewProps) {
     return {
       id: `background-work:${activeThread.id}`,
       variant: "default",
+      // A short title and two small actions: truncate rather than wrap the
+      // actions onto their own row in a narrow composer.
+      inlineActions: true,
       priority: "activity",
       icon: (
         <span
